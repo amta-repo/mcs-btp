@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { MapPin, Phone, Mail, MessageCircle, ArrowUpRight, Music2 } from "lucide-react";
+import { MapPin, Phone, Mail, MessageCircle, ArrowUpRight, Facebook, Instagram } from "lucide-react";
 import {
   LOGO_URL,
   MAPS_URL,
@@ -7,7 +7,11 @@ import {
   EMAIL,
   PHONE_DISPLAY,
   PHONE_TEL,
-  TIKTOK,
+  FACEBOOK,
+  INSTAGRAM,
+  BRAND,
+  BRAND_LONG,
+  ADDRESS,
 } from "@/lib/site-data";
 
 export { MAPS_URL };
@@ -21,14 +25,14 @@ const NAV = [
 ] as const;
 
 const zones = [
+  "Godomey",
+  "Tankpè",
   "Abomey-Calavi",
   "Cotonou",
-  "Godomey",
   "Porto-Novo",
   "Ouidah",
   "Sèmè-Podji",
   "Allada",
-  "Parakou",
 ];
 
 export function SiteFooter() {
@@ -40,17 +44,21 @@ export function SiteFooter() {
         <div className="grid gap-10 lg:grid-cols-12">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <div className="flex items-center gap-3">
-              <img src={LOGO_URL} alt="Logo THECLE BTP" className="h-12 w-12 rounded-full" />
-              <div className="leading-tight">
-                <div className="text-sm font-bold tracking-wide">THECLE BTP</div>
-                <div className="text-[10px] tracking-[0.2em] text-muted-foreground uppercase">
-                  Construction · Ingénierie · Bénin
+            <div className="flex min-w-0 items-center gap-3">
+              <img
+                src={LOGO_URL}
+                alt={`Logo ${BRAND}`}
+                className="h-12 w-12 shrink-0 rounded-xl bg-white object-contain p-1"
+              />
+              <div className="min-w-0 leading-tight">
+                <div className="text-sm font-bold tracking-wide">{BRAND}</div>
+                <div className="text-[9px] tracking-[0.14em] text-muted-foreground uppercase sm:text-[10px]">
+                  {BRAND_LONG}
                 </div>
               </div>
             </div>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Entreprise béninoise de construction et de génie civil basée à Abomey-Calavi. Plans
+              Entreprise béninoise de construction et de génie civil basée à Tankpè, Godomey. Plans
               d'ingénierie, construction complète et remise des clés — avec ou sans terrain déjà
               acquis.
             </p>
@@ -66,20 +74,29 @@ export function SiteFooter() {
                 <div className="text-[10px] font-bold tracking-wider text-amber-glow uppercase">
                   Siège · Ouvrir dans Google Maps
                 </div>
-                <div className="truncate text-sm font-semibold">Abomey-Calavi, Atlantique</div>
+                <div className="truncate text-sm font-semibold">{ADDRESS}</div>
               </div>
               <ArrowUpRight className="h-4 w-4 shrink-0 text-amber-glow transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </a>
 
             <div className="mt-6 flex items-center gap-2">
               <a
-                href={TIKTOK}
+                href={FACEBOOK}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="TikTok"
+                aria-label="Facebook"
                 className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition hover:border-amber-glow/40 hover:text-amber-glow"
               >
-                <Music2 className="h-4 w-4" />
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a
+                href={INSTAGRAM}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted-foreground transition hover:border-amber-glow/40 hover:text-amber-glow"
+              >
+                <Instagram className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -156,8 +173,10 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <div>© {new Date().getFullYear()} THECLE BTP — Tous droits réservés.</div>
-          <div>Abomey-Calavi · Département de l'Atlantique · Bénin</div>
+          <div>
+            © {new Date().getFullYear()} {BRAND} — Tous droits réservés.
+          </div>
+          <div>Quartier Tankpè · Godomey · Bénin</div>
         </div>
       </div>
     </footer>
