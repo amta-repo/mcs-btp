@@ -47,7 +47,7 @@ export function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* LEFT */}
-          <div>
+          <div className="min-w-0">
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -115,7 +115,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="relative"
+            className="relative min-w-0"
           >
             <div className="relative">
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-amber-glow/30 via-amber-glow/10 to-transparent blur-2xl" />
