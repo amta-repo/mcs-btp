@@ -7,13 +7,13 @@ export const Route = createFileRoute("/services")({
   component: ServicesPage,
   head: () => ({
     meta: [
-      { title: "Services — THECLE BTP | Plans, Construction, Clé en main" },
+      { title: "Services — MCS BTP | Plans, Construction, Clé en main" },
       {
         name: "description",
         content:
-          "Plans & ingénierie, construction complète et remise des clés. THECLE BTP accompagne aussi les clients qui n'ont pas encore de terrain.",
+          "Plans & ingénierie, construction complète et remise des clés. MCS BTP accompagne aussi les clients qui n'ont pas encore de terrain.",
       },
-      { property: "og:title", content: "Services — THECLE BTP" },
+      { property: "og:title", content: "Services — MCS BTP" },
       {
         property: "og:description",
         content: "Trois piliers : plans d'ingénierie, construction de zéro à la clé en main, remise des clés.",
@@ -56,7 +56,7 @@ function ServicesPage() {
             De vos plans à vos <span className="text-gold-gradient">clés en main</span>.
           </h1>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            THECLE BTP maîtrise toute la chaîne : conception technique, exécution du chantier et
+            MCS BTP maîtrise toute la chaîne : conception technique, exécution du chantier et
             livraison finale. Un seul interlocuteur, du premier croquis à la remise des clés.
           </p>
         </div>

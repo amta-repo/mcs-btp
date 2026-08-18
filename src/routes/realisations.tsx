@@ -9,13 +9,13 @@ export const Route = createFileRoute("/realisations")({
   component: RealisationsPage,
   head: () => ({
     meta: [
-      { title: "Réalisations — THECLE BTP | Chantiers au Bénin" },
+      { title: "Réalisations — MCS BTP | Chantiers au Bénin" },
       {
         name: "description",
         content:
-          "Portfolio THECLE BTP : villas, complexes hôteliers, finitions et suivi de chantier à Abomey-Calavi et dans tout le Bénin.",
+          "Portfolio MCS BTP : immeubles, villas, gros œuvre et finitions à Godomey, Abomey-Calavi et dans tout le Bénin.",
       },
-      { property: "og:title", content: "Réalisations — THECLE BTP" },
+      { property: "og:title", content: "Réalisations — MCS BTP" },
       {
         property: "og:description",
         content: "Avant / après, villas clé en main et chantiers suivis par nos ingénieurs.",

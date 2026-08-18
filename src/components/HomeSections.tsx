@@ -42,7 +42,7 @@ export function TrustBar() {
     { icon: Building2, label: "120+ projets réalisés" },
     { icon: Ruler, label: "Plans & construction" },
     { icon: FileText, label: "Devis gratuit" },
-    { icon: MapPin, label: "Basé à Abomey-Calavi" },
+    { icon: MapPin, label: "Basé à Godomey" },
   ];
   return (
     <section className="border-y border-white/10 bg-charcoal/50">
@@ -273,7 +273,7 @@ export function WhyUs() {
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <motion.div {...reveal} className="max-w-2xl">
           <div className="text-xs font-bold uppercase tracking-[0.3em] text-amber-glow">
-            Pourquoi THECLE BTP
+            Pourquoi MCS BTP
           </div>
           <h2 className="mt-3 text-3xl font-bold sm:text-5xl">
             Accessible. <span className="text-gold-gradient">Flexible.</span> Rigoureux.
@@ -304,7 +304,7 @@ export function Testimonials() {
     {
       text: "Du plan à la remise des clés, tout a été clair. Le chantier a été livré dans les délais annoncés.",
       name: "Client — Villa R+1",
-      role: "Abomey-Calavi",
+      role: "Godomey",
     },
     {
       text: "Je n'avais pas encore de terrain. L'équipe m'a accompagné jusqu'à l'achat puis a construit.",
@@ -389,7 +389,7 @@ export function LocationBlock() {
             <div className="text-xs font-bold uppercase tracking-[0.3em] text-amber-glow">
               Nous trouver
             </div>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Abomey-Calavi, Atlantique</h2>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Quartier Tankpè, Godomey</h2>
             <p className="mt-3 text-muted-foreground">
               Notre bureau vous accueille pour étudier vos plans et votre budget. Passez nous voir
               ou appelez-nous.
@@ -409,7 +409,7 @@ export function LocationBlock() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
             <iframe
               src={MAPS_EMBED}
-              title="Localisation THECLE BTP"
+              title="Localisation MCS BTP"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="h-[320px] w-full sm:h-[400px]"

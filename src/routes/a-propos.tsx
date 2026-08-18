@@ -6,9 +6,9 @@ export const Route = createFileRoute("/a-propos")({
   component: AboutPage,
   head: () => ({
     meta: [
-      { title: "À propos — THECLE BTP" },
-      { name: "description", content: "THECLE BTP : histoire, valeurs et équipe. Entreprise de construction à Abomey-Calavi, Bénin." },
-      { property: "og:title", content: "À propos — THECLE BTP" },
+      { title: "À propos — MCS BTP" },
+      { name: "description", content: "MCS BTP (Mathaphil Construction Services) : histoire, valeurs et équipe. Entreprise de construction à Godomey, Bénin." },
+      { property: "og:title", content: "À propos — MCS BTP" },
       { property: "og:description", content: "Notre histoire, nos valeurs, notre équipe." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -34,7 +34,7 @@ function AboutPage() {
             Une <span className="text-gold-gradient">maison</span> béninoise du bâtiment.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Basée à Abomey-Calavi (Atlantique), THECLE BTP est une entreprise indépendante de
+            Basée au Quartier Tankpè à Godomey (Atlantique), MCS BTP — Mathaphil Construction Services — est une entreprise indépendante de
             construction et de génie civil. Nos équipes — ingénieurs, chefs de chantier, ouvriers
             qualifiés — accompagnent particuliers, PME et institutions publiques dans la réalisation
             d'ouvrages durables sur l'ensemble du territoire béninois.

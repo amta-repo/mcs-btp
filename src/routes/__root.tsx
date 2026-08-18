@@ -80,13 +80,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "THECLE BTP — Construction & Génie Civil à Abomey-Calavi" },
+      { title: "MCS BTP — Construction & Génie Civil à Godomey, Bénin" },
       {
         name: "description",
         content:
-          "De vos plans à vos clés en main. THECLE BTP construit villas, immeubles et projets clé en main au Bénin.",
+          "Mathaphil Construction Services (MCS BTP) : plans, construction et remise des clés à Godomey, Bénin.",
       },
-      { property: "og:title", content: "THECLE BTP — Construction & Génie Civil à Abomey-Calavi" },
+      { property: "og:title", content: "MCS BTP — Construction & Génie Civil à Godomey, Bénin" },
       {
         property: "og:description",
         content:
