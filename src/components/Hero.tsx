@@ -64,21 +64,21 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-6 text-4xl leading-[1.05] font-bold sm:text-6xl lg:text-7xl"
             >
-              De vos plans à vos <span className="text-gold-gradient">clés en main</span>
-              <br />— construisons ensemble.
+              Nous bâtissons.
+              <br />
+              Vous recevez <span className="text-gold-gradient">les clés</span>.
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.28 }}
-              className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
+              className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
-              THECLE BTP conçoit vos <strong className="text-foreground">plans d'ingénierie</strong>,
-              construit <strong className="text-foreground">de la fondation à la finition</strong> et
-              vous remet un bâtiment <strong className="text-foreground">terminé, prêt à vivre</strong>.
-              Avec ou sans terrain déjà acquis.
+              Du plan à la finition, sans stress.{" "}
+              <strong className="text-foreground">Avec ou sans terrain.</strong>
             </motion.p>
+
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
