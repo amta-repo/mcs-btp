@@ -42,7 +42,7 @@ export function TrustBar() {
     { icon: Building2, label: "120+ projets réalisés" },
     { icon: Ruler, label: "Plans & construction" },
     { icon: FileText, label: "Devis gratuit" },
-    { icon: MapPin, label: "Basé à Abomey-Calavi" },
+    { icon: MapPin, label: "Basé à Godomey" },
   ];
   return (
     <section className="border-y border-white/10 bg-charcoal/50">
@@ -87,18 +87,30 @@ export function ServicesPillars() {
               {...reveal}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -8 }}
-              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur-xl transition hover:border-amber-glow/40 hover:shadow-[0_25px_60px_-25px_oklch(0.76_0.14_80/0.55)]"
+              className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl transition hover:border-amber-glow/40 hover:shadow-[0_25px_60px_-25px_oklch(0.76_0.14_80/0.55)]"
             >
-              <span className="text-[11px] font-bold uppercase tracking-[0.25em] text-brand-blue">
-                0{i + 1}
-              </span>
-              <div className="mt-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-glow/10 text-amber-glow ring-1 ring-amber-glow/30">
-                <s.icon className="h-7 w-7" />
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <img
+                  src={s.img}
+                  alt={s.title}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+                <div className="absolute bottom-4 left-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-glow/15 text-amber-glow ring-1 ring-amber-glow/40 backdrop-blur-xl">
+                  <s.icon className="h-6 w-6" />
+                </div>
+                <span className="absolute top-4 right-4 text-[11px] font-bold tracking-[0.25em] text-amber-glow/90 uppercase">
+                  0{i + 1}
+                </span>
               </div>
-              <h3 className="mt-5 text-xl font-bold">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
+              <div className="p-7 pt-5">
+                <h3 className="text-xl font-bold">{s.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
+              </div>
               <div className="absolute -right-10 -bottom-10 h-32 w-32 rounded-full bg-amber-glow/5 blur-2xl transition group-hover:bg-amber-glow/20" />
             </motion.article>
+
           ))}
         </div>
 
@@ -273,7 +285,7 @@ export function WhyUs() {
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         <motion.div {...reveal} className="max-w-2xl">
           <div className="text-xs font-bold uppercase tracking-[0.3em] text-amber-glow">
-            Pourquoi THECLE BTP
+            Pourquoi MCS BTP
           </div>
           <h2 className="mt-3 text-3xl font-bold sm:text-5xl">
             Accessible. <span className="text-gold-gradient">Flexible.</span> Rigoureux.
@@ -304,7 +316,7 @@ export function Testimonials() {
     {
       text: "Du plan à la remise des clés, tout a été clair. Le chantier a été livré dans les délais annoncés.",
       name: "Client — Villa R+1",
-      role: "Abomey-Calavi",
+      role: "Godomey",
     },
     {
       text: "Je n'avais pas encore de terrain. L'équipe m'a accompagné jusqu'à l'achat puis a construit.",
@@ -389,7 +401,7 @@ export function LocationBlock() {
             <div className="text-xs font-bold uppercase tracking-[0.3em] text-amber-glow">
               Nous trouver
             </div>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Abomey-Calavi, Atlantique</h2>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Quartier Tankpè, Godomey</h2>
             <p className="mt-3 text-muted-foreground">
               Notre bureau vous accueille pour étudier vos plans et votre budget. Passez nous voir
               ou appelez-nous.
@@ -409,7 +421,7 @@ export function LocationBlock() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
             <iframe
               src={MAPS_EMBED}
-              title="Localisation THECLE BTP"
+              title="Localisation MCS BTP"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="h-[320px] w-full sm:h-[400px]"

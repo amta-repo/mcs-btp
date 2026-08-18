@@ -1,32 +1,47 @@
 import { Ruler, Building2, KeyRound } from "lucide-react";
-import maison from "@/assets/maison-3-chambres.jpg.asset.json";
-import exterieur from "@/assets/amenagement-exterieur.jpg.asset.json";
-import chantierR2 from "@/assets/chantier-r2-hotel.jpg.asset.json";
-import salon from "@/assets/salon-moderne.jpg.asset.json";
-import beton from "@/assets/controle-beton.jpg.asset.json";
-import chantier from "@/assets/sur-le-chantier.jpg.asset.json";
-import avant from "@/assets/avant.jpg.asset.json";
-import apres from "@/assets/apres.jpg.asset.json";
-import logo from "@/assets/logo-thecle.png.asset.json";
+import plansCasque from "@/assets/plans-casque.jpg.asset.json";
+import genieCivil from "@/assets/genie-civil.jpg.asset.json";
+import fondation from "@/assets/fondation.jpg.asset.json";
+import dalle from "@/assets/dalle.jpg.asset.json";
+import coulage from "@/assets/coulage-beton.jpg.asset.json";
+import realisationR2 from "@/assets/realisation-r2.jpg.asset.json";
+import ferraillage from "@/assets/ferraillage.jpg.asset.json";
+import semelle from "@/assets/semelle-chainage.jpg.asset.json";
+import fauxPlafond from "@/assets/faux-plafond.jpg.asset.json";
+import logo from "@/assets/logo-mcs.jpg.asset.json";
 
-export const BRAND = "THECLE BTP";
-export const PHONE_DISPLAY = "+229 01 67 28 46 72";
-export const PHONE_TEL = "tel:+2290167284672";
-export const WHATSAPP = "https://wa.me/2290167284672";
-export const EMAIL = "contact@theclebtp.com";
-export const TIKTOK = "https://www.tiktok.com/@theclebtp";
+export const BRAND = "MCS BTP";
+export const BRAND_LONG = "MATHAPHIL CONSTRUCTION SERVICES";
+export const AI_NAME = "Mataphill AI";
+export const PHONE_DISPLAY = "+229 61 21 05 89";
+export const PHONE_TEL = "tel:+22961210589";
+export const WHATSAPP = "https://wa.me/22961210589";
+export const WHATSAPP_NUMBER = "22961210589";
+export const EMAIL = "mcsbtp@gmail.com";
+export const FACEBOOK = "https://www.facebook.com/MataphilConstructionServices/";
+export const INSTAGRAM = "https://www.instagram.com/mataphilconstructionservices/";
+export const ADDRESS = "Quartier Tankpè, Godomey";
 export const LOGO_URL = logo.url;
 
-export const MAPS_URL =
-  "https://www.google.com/maps/place/THECLE+BTP/@6.4169129,2.3073736,17z/data=!3m1!4b1!4m6!3m5!1s0x1024a90019e7669d:0x3015ded640339bbc!8m2!3d6.4169129!4d2.3099539!16s%2Fg%2F11n430126s";
+export const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=C8HG%2BQH2%20Godomey";
 
-/* PLACEHOLDER — remplacez ce lien par votre propre code d'intégration Google Maps */
-export const MAPS_EMBED =
-  "https://www.google.com/maps?q=6.4169129,2.3099539&z=17&hl=fr&output=embed";
+export const MAPS_EMBED = "https://www.google.com/maps?q=C8HG%2BQH2+Godomey&z=17&hl=fr&output=embed";
+
+export const IMAGES = {
+  plansCasque: plansCasque.url,
+  genieCivil: genieCivil.url,
+  fondation: fondation.url,
+  dalle: dalle.url,
+  coulage: coulage.url,
+  realisationR2: realisationR2.url,
+  ferraillage: ferraillage.url,
+  semelle: semelle.url,
+  fauxPlafond: fauxPlafond.url,
+};
 
 export const BEFORE_AFTER = {
-  before: { url: avant.url, label: "Avant — Gros œuvre RDC" },
-  after: { url: apres.url, label: "Après — Livraison clé en main" },
+  before: { url: fondation.url, label: "Avant — Fondations & coffrage" },
+  after: { url: realisationR2.url, label: "Après — Immeuble livré clé en main" },
 };
 
 export const services = [
@@ -34,67 +49,86 @@ export const services = [
     icon: Ruler,
     title: "Plans & Ingénierie",
     desc: "Dessins techniques, plans d'exécution et notes de calcul réalisés par nos ingénieurs avant le premier coup de pioche.",
+    img: genieCivil.url,
   },
   {
     icon: Building2,
     title: "Construction complète",
     desc: "De la fondation à la finition : gros œuvre, second œuvre et suivi de chantier rigoureux, de zéro à la clé en main.",
+    img: coulage.url,
   },
   {
     icon: KeyRound,
     title: "Remise des clés",
-    desc: "Nettoyage, contrôles finaux et livraison : vous entrez dans un bâtiment terminé, prêt à vivre ou à exploiter.",
+    desc: "Finitions, contrôles finaux et livraison : vous entrez dans un bâtiment terminé, prêt à vivre ou à exploiter.",
+    img: fauxPlafond.url,
   },
 ];
 
 export const projects = [
   {
-    img: chantierR2.url,
-    tag: "Gros Œuvre",
-    title: "R+2 — Hôtel, résidence & bar VIP",
-    location: "Abomey-Calavi, Atlantique",
-    progress: 65,
-    desc: "Coulage de dalle et structure béton armé pour un complexe hôtelier avec résidence et bar VIP.",
-  },
-  {
-    img: salon.url,
-    tag: "Finitions",
-    title: "Salon moderne — Villa livrée",
-    location: "Calavi, Bénin",
-    progress: 100,
-    desc: "Finitions haut de gamme : marbre, escalier suspendu et grande verrière sur un plan optimisé.",
-  },
-  {
-    img: maison.url,
+    img: realisationR2.url,
     tag: "Clé en main",
-    title: "Maison moderne 3 chambres",
-    location: "Atlantique, Bénin",
+    title: "Immeuble R+2 — Bureaux & résidence",
+    location: "Godomey, Atlantique",
     progress: 100,
-    desc: "Conception et construction d'une maison basse contemporaine avec carport et aménagement paysager.",
+    desc: "Conception et réalisation complète d'un immeuble contemporain à façades béton et grandes baies vitrées.",
   },
   {
-    img: exterieur.url,
-    tag: "Aménagement",
-    title: "Aménagement extérieur & pergola",
+    img: coulage.url,
+    tag: "Gros œuvre",
+    title: "Coulage de dalle béton armé",
+    location: "Quartier Tankpè, Godomey",
+    progress: 80,
+    desc: "Mise en œuvre du béton à la pompe sur plancher ferraillé, avec contrôle de consistance avant coulage.",
+  },
+  {
+    img: dalle.url,
+    tag: "Structure",
+    title: "Ferraillage de plancher haut",
+    location: "Godomey, Bénin",
+    progress: 70,
+    desc: "Nappe d'armatures et coffrage d'un plancher haut vérifiés par notre ingénieur avant coulage.",
+  },
+  {
+    img: fondation.url,
+    tag: "Fondations",
+    title: "Coffrage de semelles filantes",
+    location: "Abomey-Calavi, Bénin",
+    progress: 35,
+    desc: "Implantation et coffrage bois des fondations — la solidité commence sous le niveau du sol.",
+  },
+  {
+    img: semelle.url,
+    tag: "Chaînage",
+    title: "Chaînage bas & attentes verticales",
+    location: "Atlantique, Bénin",
+    progress: 45,
+    desc: "Chaînage béton armé avec attentes de poteaux, prêt pour l'élévation de la maçonnerie.",
+  },
+  {
+    img: fauxPlafond.url,
+    tag: "Finitions",
+    title: "Faux plafond & décoration murale",
     location: "Cotonou, Bénin",
     progress: 100,
-    desc: "Jardin, dallage et éclairage d'ambiance — conseil sur ce qu'il faut construire… et ne pas construire.",
+    desc: "Staff, éclairage indirect et niches décoratives — les finitions qui donnent le caractère à la pièce.",
   },
   {
-    img: beton.url,
+    img: ferraillage.url,
     tag: "Contrôle qualité",
-    title: "Vérification de la consistance du béton",
-    location: "Chantier, Calavi",
-    progress: 100,
-    desc: "Essai d'affaissement (slump test) systématique avant chaque mise en œuvre du béton.",
+    title: "Ligature des armatures",
+    location: "Chantier, Godomey",
+    progress: 60,
+    desc: "Espacement et recouvrement des aciers contrôlés barre par barre avant la mise en œuvre du béton.",
   },
   {
-    img: chantier.url,
-    tag: "Suivi de chantier",
-    title: "Supervision d'un plancher R+1",
-    location: "Abomey-Calavi",
-    progress: 80,
-    desc: "Contrôle du ferraillage et du coffrage avant coulage, avec notre ingénieur sur site.",
+    img: genieCivil.url,
+    tag: "Études",
+    title: "Plans d'exécution & métrés",
+    location: "Bureau d'études, Tankpè",
+    progress: 100,
+    desc: "Plans techniques, devis quantitatif et estimatif détaillé remis avant le démarrage du chantier.",
   },
 ];
 

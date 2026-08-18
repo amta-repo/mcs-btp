@@ -17,13 +17,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "THECLE BTP — De vos plans à vos clés en main | Abomey-Calavi" },
+      { title: "MCS BTP — Nous bâtissons, vous recevez les clés | Godomey" },
       {
         name: "description",
         content:
-          "THECLE BTP : plans d'ingénierie, construction complète et remise des clés à Abomey-Calavi, Bénin. Devis gratuit sur WhatsApp.",
+          "MCS BTP : plans d'ingénierie, construction complète et remise des clés à Godomey, Bénin. Devis gratuit sur WhatsApp.",
       },
-      { property: "og:title", content: "THECLE BTP — De vos plans à vos clés en main" },
+      { property: "og:title", content: "MCS BTP — Nous bâtissons, vous recevez les clés" },
       {
         property: "og:description",
         content:

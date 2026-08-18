@@ -45,9 +45,9 @@ export function Hero() {
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           {/* LEFT */}
-          <div>
+          <div className="min-w-0">
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,8 @@ export function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-[11px] font-semibold tracking-wider text-amber-glow uppercase backdrop-blur-xl"
             >
               <Crown className="h-3.5 w-3.5" />
-              Construction & Ingénierie · Abomey-Calavi
+              Construction & Ingénierie · Godomey, Bénin
+
             </motion.div>
 
             <motion.h1
@@ -64,21 +65,21 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="mt-6 text-4xl leading-[1.05] font-bold sm:text-6xl lg:text-7xl"
             >
-              De vos plans à vos <span className="text-gold-gradient">clés en main</span>
-              <br />— construisons ensemble.
+              Nous bâtissons.
+              <br />
+              Vous recevez <span className="text-gold-gradient">les clés</span>.
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.28 }}
-              className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
+              className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
-              THECLE BTP conçoit vos <strong className="text-foreground">plans d'ingénierie</strong>,
-              construit <strong className="text-foreground">de la fondation à la finition</strong> et
-              vous remet un bâtiment <strong className="text-foreground">terminé, prêt à vivre</strong>.
-              Avec ou sans terrain déjà acquis.
+              Du plan à la finition, sans stress.{" "}
+              <strong className="text-foreground">Avec ou sans terrain.</strong>
             </motion.p>
+
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -114,7 +115,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="relative"
+            className="relative min-w-0"
           >
             <div className="relative">
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-amber-glow/30 via-amber-glow/10 to-transparent blur-2xl" />

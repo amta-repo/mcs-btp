@@ -13,13 +13,13 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
   head: () => ({
     meta: [
-      { title: "Contact & Devis gratuit — THECLE BTP" },
+      { title: "Contact & Devis gratuit — MCS BTP" },
       {
         name: "description",
         content:
-          "Contactez THECLE BTP à Abomey-Calavi : devis gratuit, WhatsApp +229 01 67 28 46 72, contact@theclebtp.com.",
+          "Contactez MCS BTP à Godomey (Quartier Tankpè) : devis gratuit, WhatsApp +229 61 21 05 89, mcsbtp@gmail.com.",
       },
-      { property: "og:title", content: "Contact & Devis gratuit — THECLE BTP" },
+      { property: "og:title", content: "Contact & Devis gratuit — MCS BTP" },
       {
         property: "og:description",
         content: "Parlons de votre projet de construction au Bénin — réponse rapide sur WhatsApp.",
@@ -102,7 +102,7 @@ function ContactPage() {
                 </div>
                 <div className="min-w-0">
                   <div className="text-xs tracking-wider text-muted-foreground uppercase">Adresse</div>
-                  <div className="truncate text-sm font-semibold">Abomey-Calavi, Atlantique, Bénin</div>
+                  <div className="truncate text-sm font-semibold">Quartier Tankpè, Godomey, Bénin</div>
                 </div>
               </a>
             </div>
@@ -111,7 +111,7 @@ function ContactPage() {
           {/* PLACEHOLDER GOOGLE MAPS — remplacez MAPS_EMBED dans src/lib/site-data.ts */}
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-charcoal">
             <iframe
-              title="THECLE BTP sur Google Maps"
+              title="MCS BTP sur Google Maps"
               src={MAPS_EMBED}
               className="h-full min-h-[440px] w-full"
               loading="lazy"
@@ -123,7 +123,7 @@ function ContactPage() {
         <div className="mt-12 rounded-3xl border border-white/10 bg-white/5 p-6 text-center backdrop-blur-xl sm:p-10">
           <h2 className="text-2xl font-bold sm:text-3xl">Besoin d'un devis rapidement ?</h2>
           <p className="mt-2 text-sm text-muted-foreground">
-            Notre Assistant Virtuel THECLE BTP (en bas à droite) réalise un pré-diagnostic en moins
+            Mataphill AI (en bas à droite) réalise un pré-diagnostic en moins
             d'une minute.
           </p>
         </div>
