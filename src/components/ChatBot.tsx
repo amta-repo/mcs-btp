@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { MessageCircle, X, Send, Check, ExternalLink } from "lucide-react";
+import { WHATSAPP_NUMBER, BRAND, AI_NAME, LOGO_URL } from "@/lib/site-data";
 
-const WHATSAPP_NUMBER = "2290167284672";
 const WORK_TYPES = [
   "Plans & Ingénierie",
   "Construction complète",
@@ -34,7 +34,7 @@ export function ChatBot() {
     {
       from: "bot",
       text:
-        "Bonjour 👋 Je suis l'**Assistant Virtuel THECLE BTP**. Je peux vous établir un pré-diagnostic pour votre projet en moins d'une minute. On commence ?",
+        `Bonjour 👋 Je suis **${AI_NAME}**, l'assistant de ${BRAND}. Je peux vous établir un pré-diagnostic pour votre projet en moins d'une minute. On commence ?`,
     },
   ]);
   const [input, setInput] = useState("");
@@ -121,7 +121,7 @@ export function ChatBot() {
 
   const whatsappHandoff = () => {
     const msg = encodeURIComponent(
-      `Bonjour THECLE BTP, je viens du site web.\nNom: ${form.name || "-"}\nProjet: ${form.company || "-"}\nTravaux: ${form.work.join(", ") || "-"}\nJe souhaite parler à un représentant humain.`,
+      `Bonjour ${BRAND}, je viens du site web.\nNom: ${form.name || "-"}\nProjet: ${form.company || "-"}\nTravaux: ${form.work.join(", ") || "-"}\nJe souhaite parler à un représentant humain.`,
     );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`, "_blank");
   };
@@ -177,11 +177,13 @@ export function ChatBot() {
           >
             {/* Header */}
             <div className="flex items-center gap-3 bg-whatsapp px-4 py-3 text-white">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/20 backdrop-blur">
-                <MessageCircle className="h-5 w-5" />
-              </div>
+              <img
+                src={LOGO_URL}
+                alt={AI_NAME}
+                className="h-10 w-10 shrink-0 rounded-full bg-white object-contain p-0.5"
+              />
               <div className="min-w-0 flex-1">
-                <div className="truncate font-semibold">Assistant Virtuel THECLE BTP</div>
+                <div className="truncate font-semibold">{AI_NAME}</div>
                 <div className="flex items-center gap-1.5 text-xs text-white/80">
                   <span className="h-2 w-2 rounded-full bg-green-300" />
                   En ligne · répond en quelques secondes
@@ -297,7 +299,7 @@ export function ChatBot() {
                   </motion.div>
                   <div className="text-sm font-semibold text-amber-glow">Diagnostic complet</div>
                   <div className="mt-1 text-xs text-muted-foreground">
-                    Réf: TBTP-{Date.now().toString().slice(-6)}
+                    Réf: MCS-{Date.now().toString().slice(-6)}
                   </div>
                 </motion.div>
               )}
