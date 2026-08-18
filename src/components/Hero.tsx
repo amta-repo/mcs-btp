@@ -55,7 +55,8 @@ export function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-[11px] font-semibold tracking-wider text-amber-glow uppercase backdrop-blur-xl"
             >
               <Crown className="h-3.5 w-3.5" />
-              Construction & Ingénierie · Abomey-Calavi
+              Construction & Ingénierie · Godomey, Bénin
+
             </motion.div>
 
             <motion.h1
