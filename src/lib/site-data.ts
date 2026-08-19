@@ -1,14 +1,16 @@
 import { Ruler, Building2, KeyRound } from "lucide-react";
-import plansCasque from "@/assets/plans-casque.jpg.asset.json";
-import genieCivil from "@/assets/genie-civil.jpg.asset.json";
-import fondation from "@/assets/fondation.jpg.asset.json";
-import dalle from "@/assets/dalle.jpg.asset.json";
-import coulage from "@/assets/coulage-beton.jpg.asset.json";
-import realisationR2 from "@/assets/realisation-r2.jpg.asset.json";
-import ferraillage from "@/assets/ferraillage.jpg.asset.json";
-import semelle from "@/assets/semelle-chainage.jpg.asset.json";
-import fauxPlafond from "@/assets/faux-plafond.jpg.asset.json";
-import logo from "@/assets/logo-mcs.jpg.asset.json";
+
+// Images servies depuis /public/media — fonctionnent sur tout hébergement (Netlify, etc.)
+const plansCasque = { url: "/media/plans-casque.jpg" };
+const genieCivil = { url: "/media/genie-civil.jpg" };
+const fondation = { url: "/media/fondation.jpg" };
+const dalle = { url: "/media/dalle.jpg" };
+const coulage = { url: "/media/coulage-beton.jpg" };
+const realisationR2 = { url: "/media/realisation-r2.jpg" };
+const ferraillage = { url: "/media/ferraillage.jpg" };
+const semelle = { url: "/media/semelle-chainage.jpg" };
+const fauxPlafond = { url: "/media/faux-plafond.jpg" };
+const logo = { url: "/media/logo-mcs.jpg" };
 
 export const BRAND = "MCS BTP";
 export const BRAND_LONG = "MATHAPHIL CONSTRUCTION SERVICES";
