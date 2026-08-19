@@ -13,6 +13,10 @@ import {
   Wrench,
 } from "lucide-react";
 import heroVideo from "@/assets/hero-bg.mp4.asset.json";
+
+// Le fichier vidéo est trop volumineux pour le dépôt : il est servi depuis le CDN
+// en URL absolue afin de fonctionner sur n'importe quel hébergement (Netlify inclus).
+const HERO_VIDEO_URL = `https://project--54b94874-39c7-47e2-8690-88cca2535203.lovable.app${heroVideo.url}`;
 import { WHATSAPP } from "@/lib/site-data";
 
 const CLIENTS = [
@@ -29,7 +33,7 @@ export function Hero() {
     <section className="relative isolate overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24">
       <div className="absolute inset-0 -z-10">
         <video
-          src={heroVideo.url}
+          src={HERO_VIDEO_URL}
           autoPlay
           loop
           muted
