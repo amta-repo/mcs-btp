@@ -13,6 +13,10 @@ import {
   Wrench,
 } from "lucide-react";
 import heroVideo from "@/assets/hero-bg.mp4.asset.json";
+
+// Le fichier vidéo est trop volumineux pour le dépôt : il est servi depuis le CDN
+// en URL absolue afin de fonctionner sur n'importe quel hébergement (Netlify inclus).
+const HERO_VIDEO_URL = `https://project--54b94874-39c7-47e2-8690-88cca2535203.lovable.app${heroVideo.url}`;
 import { WHATSAPP } from "@/lib/site-data";
 
 const CLIENTS = [
