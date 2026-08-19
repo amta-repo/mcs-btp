@@ -73,7 +73,7 @@ function ServicesPage() {
               transition={{ duration: 0.5, delay: i * 0.05 }}
               className="group grid gap-0 overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]"
             >
-              <div className="relative aspect-[16/10] overflow-hidden lg:aspect-auto lg:min-h-[300px]">
+              <div className="relative aspect-[16/10] overflow-hidden lg:aspect-[4/3]">
                 <img
                   src={s.img}
                   alt={s.title}
@@ -82,7 +82,7 @@ function ServicesPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-background/10 lg:to-background/80" />
               </div>
-              <div className="p-6 sm:p-10">
+              <div className="flex flex-col justify-center p-6 sm:p-10">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-glow/10 text-amber-glow ring-1 ring-amber-glow/30">
                   <s.icon className="h-7 w-7" />
                 </div>
