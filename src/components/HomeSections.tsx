@@ -448,12 +448,6 @@ export function FinalCTA() {
         <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
           Un message WhatsApp suffit pour obtenir un premier avis technique et une estimation.
         </p>
-        <a
-          href={PHONE_TEL}
-          className="mt-8 block text-3xl font-black tracking-tight text-amber-glow sm:text-5xl"
-        >
-          {PHONE_DISPLAY}
-        </a>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <motion.a
             whileHover={{ scale: 1.04 }}
