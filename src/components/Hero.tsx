@@ -33,7 +33,7 @@ export function Hero() {
     <section className="relative isolate overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24">
       <div className="absolute inset-0 -z-10">
         <video
-          src={heroVideo.url}
+          src={HERO_VIDEO_URL}
           autoPlay
           loop
           muted
