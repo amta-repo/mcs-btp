@@ -45,11 +45,17 @@ export const IMAGES = {
   ferraillage: ferraillage.url,
   semelle: semelle.url,
   fauxPlafond: fauxPlafond.url,
+  immeubleChantier: immeubleChantier.url,
+  villaModerne: villaModerne.url,
+  villaContemporaine: villaContemporaine.url,
+  interieurStaff: interieurStaff.url,
+  grosOeuvreR1: grosOeuvreR1.url,
+  fauxPlafondPose: fauxPlafondPose.url,
 };
 
 export const BEFORE_AFTER = {
-  before: { url: fondation.url, label: "Avant — Fondations & coffrage" },
-  after: { url: realisationR2.url, label: "Après — Immeuble livré clé en main" },
+  before: { url: grosOeuvreR1.url, label: "Avant — Gros œuvre R+1" },
+  after: { url: villaModerne.url, label: "Après — Villa livrée clé en main" },
 };
 
 export const services = [
