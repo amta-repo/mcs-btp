@@ -10,6 +10,12 @@ const realisationR2 = { url: "/media/realisation-r2.jpg" };
 const ferraillage = { url: "/media/ferraillage.jpg" };
 const semelle = { url: "/media/semelle-chainage.jpg" };
 const fauxPlafond = { url: "/media/faux-plafond.jpg" };
+const immeubleChantier = { url: "/media/immeuble-chantier.jpg" };
+const villaModerne = { url: "/media/villa-moderne.jpg" };
+const villaContemporaine = { url: "/media/villa-contemporaine.jpg" };
+const interieurStaff = { url: "/media/interieur-staff.jpg" };
+const grosOeuvreR1 = { url: "/media/gros-oeuvre-r1.jpg" };
+const fauxPlafondPose = { url: "/media/faux-plafond-pose.jpg" };
 const logo = { url: "/media/logo-mcs.jpg" };
 
 export const BRAND = "MCS BTP";
@@ -39,11 +45,17 @@ export const IMAGES = {
   ferraillage: ferraillage.url,
   semelle: semelle.url,
   fauxPlafond: fauxPlafond.url,
+  immeubleChantier: immeubleChantier.url,
+  villaModerne: villaModerne.url,
+  villaContemporaine: villaContemporaine.url,
+  interieurStaff: interieurStaff.url,
+  grosOeuvreR1: grosOeuvreR1.url,
+  fauxPlafondPose: fauxPlafondPose.url,
 };
 
 export const BEFORE_AFTER = {
-  before: { url: fondation.url, label: "Avant — Fondations & coffrage" },
-  after: { url: realisationR2.url, label: "Après — Immeuble livré clé en main" },
+  before: { url: grosOeuvreR1.url, label: "Avant — Gros œuvre R+1" },
+  after: { url: villaModerne.url, label: "Après — Villa livrée clé en main" },
 };
 
 export const services = [
@@ -63,22 +75,62 @@ export const services = [
     icon: KeyRound,
     title: "Remise des clés",
     desc: "Finitions, contrôles finaux et livraison : vous entrez dans un bâtiment terminé, prêt à vivre ou à exploiter.",
-    img: fauxPlafond.url,
+    img: interieurStaff.url,
   },
 ];
 
 export const projects = [
   {
-    img: realisationR2.url,
+    img: villaModerne.url,
     tag: "Clé en main",
-    title: "Immeuble R+2 — Bureaux & résidence",
+    title: "Villa R+1 moderne avec garage",
     location: "Godomey, Atlantique",
     progress: 100,
-    desc: "Conception et réalisation complète d'un immeuble contemporain à façades béton et grandes baies vitrées.",
+    desc: "Conception et réalisation d'une villa contemporaine : façades épurées, balcons vitrés et garage couvert.",
+  },
+  {
+    img: grosOeuvreR1.url,
+    tag: "Gros œuvre",
+    title: "Structure béton R+1 en élévation",
+    location: "Quartier Tankpè, Godomey",
+    progress: 60,
+    desc: "Poteaux, poutres et planchers coulés sur place — chantier suivi au quotidien par notre ingénieur.",
+  },
+  {
+    img: villaContemporaine.url,
+    tag: "Clé en main",
+    title: "Résidence contemporaine plain-pied",
+    location: "Abomey-Calavi, Bénin",
+    progress: 100,
+    desc: "Volumes blancs, terrasse pavée et éclairage extérieur intégré : livrée entièrement finie.",
+  },
+  {
+    img: immeubleChantier.url,
+    tag: "Grands projets",
+    title: "Immeuble tertiaire de grande envergure",
+    location: "Cotonou, Bénin",
+    progress: 85,
+    desc: "Coordination de moyens lourds et de corps d'état multiples sur un bâtiment à façades techniques.",
+  },
+  {
+    img: fauxPlafondPose.url,
+    tag: "Second œuvre",
+    title: "Pose de faux plafond modulaire",
+    location: "Cotonou, Bénin",
+    progress: 90,
+    desc: "Ossature métallique et dalles alignées au millimètre, intégrant l'électricité et la climatisation.",
+  },
+  {
+    img: interieurStaff.url,
+    tag: "Finitions",
+    title: "Staff, corniches & éclairage",
+    location: "Godomey, Bénin",
+    progress: 100,
+    desc: "Corniches en staff, peinture lissée et éclairage encastré — les détails qui font la différence.",
   },
   {
     img: coulage.url,
-    tag: "Gros œuvre",
+    tag: "Structure",
     title: "Coulage de dalle béton armé",
     location: "Quartier Tankpè, Godomey",
     progress: 80,
