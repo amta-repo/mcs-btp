@@ -10,6 +10,12 @@ const realisationR2 = { url: "/media/realisation-r2.jpg" };
 const ferraillage = { url: "/media/ferraillage.jpg" };
 const semelle = { url: "/media/semelle-chainage.jpg" };
 const fauxPlafond = { url: "/media/faux-plafond.jpg" };
+const immeubleChantier = { url: "/media/immeuble-chantier.jpg" };
+const villaModerne = { url: "/media/villa-moderne.jpg" };
+const villaContemporaine = { url: "/media/villa-contemporaine.jpg" };
+const interieurStaff = { url: "/media/interieur-staff.jpg" };
+const grosOeuvreR1 = { url: "/media/gros-oeuvre-r1.jpg" };
+const fauxPlafondPose = { url: "/media/faux-plafond-pose.jpg" };
 const logo = { url: "/media/logo-mcs.jpg" };
 
 export const BRAND = "MCS BTP";
